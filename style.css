@@ -1,0 +1,35 @@
+.sobreMim {
+  font-family: sans-serif;
+  margin-top: 100px;
+}
+body{
+  background-color: #DFCFBE;
+}
+strong{
+  text-decoration:underline;
+}
+.persistencia {
+  font-size: 20px;
+}
+.empatia{
+  font-size: 18px;
+}
+.criatividade{
+  font-size: 16px;
+}
+
+#minhaFoto {
+  height : 280px;
+  float: left;
+  padding: 10px;
+  background-color: tan;
+  margin-right: 10px;
+}
+
+.imageContainer {
+  height: 300px;
+}
+
+.meuNome {
+  text-align: center;
+}
