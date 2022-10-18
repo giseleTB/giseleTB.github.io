@@ -251,7 +251,7 @@ section {
 
 /*---------------end footer------------------*/
 
-/*----------------resposivo-------------------------*/
+/*----------------resposivo--------------------------*/
 
 @media screen and (max-width: 950px) {
   .flex-conteiner-portifolio {
@@ -287,8 +287,4 @@ section {
   h1 {
     font-size:24px;
   }
-}
-
-@media (max-width: 700px) {
-  
 }
