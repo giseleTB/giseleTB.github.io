@@ -6,49 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gisele Tonello Bringhenti</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
-  <h1 class="meuNome">Gisele Tonello Bringhenti</h1>
-  <nav>
-    <ul class="navbar">
-      <li><a href="#sobreMim">Sobre mim</a><br></li>
-      <li><a href="#softSkills">Habilidades que eu mais me orgulho</a></li>
-      <li><a href="#hardSkills">Outras Habilidades</a></li>
-      <li><a href="#meuBlogFav">Meu blog favorito</a><br></li>
-    </ul>
-  </nav>
 
-  <div class="imageContainer">
-    <div>
-      <img id="minhaFoto" src="me.jpeg" alt="Foto de Gisele"><br>
+  <div class="header">
+
+    <nav class="navbar">
+      <div class="menu__list">
+        <a class="menu__link" href="#home">Home</a>
+        <a class="menu__link" href="#about">Sobre</a>
+        <a class="menu__link" href="#portifolio">Portifólio</a>
+        <a class="menu__link" href="#contact">Contato</a>
+      </div>
+    </nav>
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <h1 class="title-home">Welcome to Gisele's portfolio</h1>
     </div>
+    
+    <!--Waves Container-->
     <div>
-      <p class="introducao">Olá! Meu nome é Gisele Tonello Bringhenti, tenho 18 anos, estou estudando Design UX/UI na Alura.</p>
-      <p class="introducao">Resido em Xanxerê, SC.</p>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
     </div>
+    <!--Waves end-->
   </div>
-	
-  <h4 id="softSkills">Lista de habilidades Soft Skills</h4>
-  <ul>
-    <li class="persistencia">Presistência</li>
-    <li class="empatia">Empatia</li>
-    <li class="criatividade">Criatividade</li>
-  </ul>
 
-  <h4 id="hardSkills">Lista de habilidades Hard Skills</h4>
-  <ul>
-    <li><em>Git</em></li>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
+  <!--Content starts-->
 
-  <a href="#minhaFoto">Minha Foto</a>
+  <section>
 
-  <h4 id="meuBlogFav">Meu blog favorito: <a href="https://jovemnerd.com.br/" alt="Blog Jovem Nerd" target="_blank">Jovem Nerd</a></h4>
+  </section>
 
-  <footer id="footer">Em desenvolvimento, por Gisele, 2022</footer>
+  <footer id="footer" class="content flex">
+    <div class="content flex">
+      <p class="footer-paragraph">Em desenvolvimento | Por Gisele Tonello Bringhenti | 2022</p>
+    </div>
+  </footer>
 
 </body>
 
