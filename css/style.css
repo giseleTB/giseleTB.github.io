@@ -159,13 +159,8 @@ section {
   justify-content: space-around;
 }
 
-#piego-codigo {
-  background-image: url("../img/piego-codigo.png");
-  margin: 10px;
-}
-
-#piego-design {
-  background-image: url("../img/piego-design.png");
+#piego {
+  background-image: url("../img/piego.png");
   margin: 10px;
 }
 
