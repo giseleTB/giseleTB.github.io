@@ -43,7 +43,7 @@
 }
 
 .inner-header {
-  padding-top: 31vh;
+  padding-top: 18vh;
   width:100%;
 }
 
@@ -146,7 +146,7 @@ section {
 
 /*---------------end about------------------*/
 
-/*---------------start portifolio------------------*/
+/*---------------start portfolio------------------*/
 
 .projetos {
   height: 300px;
@@ -154,7 +154,7 @@ section {
   border-radius: 10px;
 }
 
-.flex-conteiner-portifolio {
+.flex-conteiner-portfolio {
   display: flex;
   justify-content: space-around;
 }
@@ -164,7 +164,7 @@ section {
   margin: 10px;
 }
 
-/*---------------end portifolio------------------*/
+/*---------------end portfolio------------------*/
 
 /*---------------start contato------------------*/
 
@@ -247,7 +247,7 @@ section {
 /*----------------resposivo--------------------------*/
 
 @media screen and (max-width: 950px) {
-  .flex-conteiner-portifolio {
+  .flex-conteiner-portfolio {
     flex-direction: column;
     align-items: center;
   }
