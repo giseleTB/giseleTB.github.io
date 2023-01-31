@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,23 @@
   <link rel="shortcut icon" href="img/LOGO.svg" type="image/x-icon" />
   <title>Gisele</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/waves.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
   <script src="email.js" type="text/javascript"></script>
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  emailjs.init('1V0WQl-vvSG-kQQkF')
-</script>
+  <script type="text/javascript">
+    emailjs.init('1V0WQl-vvSG-kQQkF')
+  </script>
 </head>
 
 <body>
 
-  <div class="header">
+  <header class="header header-fixed">
 
     <nav class="navbar">
       <div class="menu__list">
@@ -33,85 +37,90 @@
 
     <!--Content before waves-->
     <div class="inner-header" id="home">
-    <h1 class="title-home">Olá! Eu sou a Gisele</h1>
-    <h1 class="title-home">Bem-vindo ao meu portfólio!</h1>
+      <h1 class="title-home">Olá! Eu sou a Gisele</h1>
+      <h1 class="title-home">Bem-vindo ao meu portfólio!</h1>
+      <ul class="link-list">
+        <li class="github-li">
+          <a href="https://github.com/giseleTB" target="_blank" class="github-a"><img
+              src="img/GitHub-Mark-Light-32px.png" alt="github logo"></a>
+        </li>
+      </ul>
     </div>
-    <ul class="link-list">
-      <li class="github-li">
-        <a href="https://github.com/giseleTB" target="_blank" class="github-a"><img src="img/GitHub-Mark-Light-32px.png" alt="github logo"></a>
-      </li>
-    </ul>
-    
+  </header>
+
+  <main>
     <!--Waves Container-->
-    <div>
+    <div class="waves">
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
         </g>
       </svg>
     </div>
     <!--Waves end-->
-  </div>
 
-  <!--Content starts-->
+    <!--Content starts-->
 
-  <section id="about">
-    <h1 class="title-section">Sobre</h1>
-    <div class="flex-conteiner-about">
-      <img class="my-photo" src="img/me.jpeg" alt="foto de Gisele">
-      <div>
-        <p class="text-about"> Olá! Meu nome é Gisele Tonello Bringhenti, tenho 18 anos e estou começando minha 
-          carreira em desenvolvimento Web e Design de Interface de Usuário. Atualmente estou fazendo cursos na 
-          Alura para melhorar meu conhecimento na área.</p>
-        <p class="text-about">Técnica em Informática pelo IFSC - Instituto Federal de Santa Catarina Campus Xanxerê - 2021</p>
-        <p class="text-about">Línguas: Português e inglês intermediário.</p>
-        <p class="text-about">Interesses: Desenho, pintura, esporte, culinária, leitura e fotografia.</p>
+    <section id="about">
+      <h1 class="title-section">Sobre</h1>
+      <div class="flex-conteiner-about">
+        <img class="my-photo" src="img/me.jpeg" alt="foto de Gisele">
+        <div>
+          <p class="text-about"> Olá! Meu nome é Gisele Tonello Bringhenti, tenho 18 anos e estou começando minha
+            carreira em desenvolvimento Web e Design de Interface de Usuário. Atualmente estou fazendo cursos na
+            Alura para melhorar meu conhecimento na área.</p>
+          <p class="text-about">Técnica em Informática pelo IFSC - Instituto Federal de Santa Catarina Campus Xanxerê -
+            2021</p>
+          <p class="text-about">Línguas: Português e inglês intermediário.</p>
+          <p class="text-about">Interesses: Desenho, pintura, esporte, culinária, leitura e fotografia.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="portfolio">
+      <h1 class="title-section">Portfólio</h1>
+      <div class="flex-conteiner-portfolio">
+        <a id="piego" target="_blank" class="projetos" href="http://www.piegotech.com/"></a>
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <h1 class="title-section">Contato</h1>
+
+      <form class="form-contato" id="form-contato">
+
+        <label class="label-form" for="nome">Nome</label><br>
+        <input class="input-form" type="text" id="nome" name="nome"><br>
+
+        <label class="label-form" for="email">Email</label><br>
+        <input class="input-form" type="email" name="email" id="email"><br>
+
+        <label class="label-form" for="mensagem">Mensagem</label><br>
+        <textarea class="input-form" name="mensagem" id="mensagem" cols="30" rows="7"></textarea>
+
+        <button class="button-form" id="button-form" type="button" onclick="SendEmail()">Enviar</button>
+      </form>
+
+      <p></p>
+
+    </section>
+
+    <div id="footer" class="content flex">
+      <div class="content flex">
+        <p class="footer-paragraph">Em desenvolvimento | Por Gisele Tonello Bringhenti | 2022</p>
       </div>
     </div>
+  </main>
 
-  </section>
-
-  <section id="portfolio">
-    <h1 class="title-section">Portfólio</h1>
-    <div class="flex-conteiner-portfolio">
-      <a id="piego" target="_blank" class="projetos" href="http://www.piegotech.com/"></a>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <h1 class="title-section">Contato</h1>
-
-    <form class="form-contato" id="form-contato">
-
-      <label class="label-form" for="nome">Nome</label><br>
-      <input class="input-form" type="text" id="nome" name="nome"><br>
-
-      <label class="label-form" for="email">Email</label><br>
-      <input class="input-form" type="email" name="email" id="email"><br>
-
-      <label class="label-form" for="mensagem">Mensagem</label><br>
-      <textarea class="input-form" name="mensagem" id="mensagem" cols="30" rows="7"></textarea>
-
-      <button class="button-form" id="button-form" type="button" onclick="SendEmail()">Enviar</button>
-    </form>
-
-    <p></p>
-
-  </section>
-
-  <footer id="footer" class="content flex">
-    <div class="content flex">
-      <p class="footer-paragraph">Em desenvolvimento | Por Gisele Tonello Bringhenti | 2022</p>
-    </div>
-  </footer>
 
 </body>
 

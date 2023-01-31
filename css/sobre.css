@@ -1,0 +1,19 @@
+#about {
+    padding-top: 40px;
+  }
+  
+  .flex-conteiner-about {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .my-photo {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .text-about {
+    font-size: 19px;
+    padding: 20px;
+  }

@@ -1,0 +1,15 @@
+.projetos {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .flex-conteiner-portfolio {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #piego {
+    background-image: url("../img/piego.png");
+    margin: 10px;
+  }
