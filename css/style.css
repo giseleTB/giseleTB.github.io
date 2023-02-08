@@ -9,13 +9,7 @@ main {
   z-index: 2;
   top: 74%;
   width: 100%;
-}
-
-section {
   text-align: center;
-  width: 60%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .title-section {
@@ -23,11 +17,19 @@ section {
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 40px;
-  padding-top: 160px;
-  padding-bottom: 40px;
 }
 
+#footer {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #333333;
+  background-color: white;
+  padding: 2px;
+  border-top: solid 1px black;
+}
 
+/*
 @media screen and (max-width: 950px) {
   .flex-conteiner-portfolio {
     flex-direction: column;
