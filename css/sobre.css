@@ -1,6 +1,6 @@
 #about {
   background: white;
-  padding: 7% 0;
+  padding: 4% 0;
 }
 
 .flex-conteiner-about {
@@ -9,7 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding: 2% 0;
+  padding: 1% 0;
 }
 
 .my-photo {
@@ -19,6 +19,6 @@
 }
 
 .text-about {
-  font-size: 19px;
+  font-size: 20px;
   padding: 20px;
 }

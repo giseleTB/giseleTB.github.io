@@ -16,16 +16,17 @@ main {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
-  font-size: 40px;
+  font-size: 51px;
 }
 
 #footer {
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
-  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 15px;
   color: #333333;
   background-color: white;
-  padding: 2px 0px 30px 0px;
+  padding: 2px 0px 2px 0px;
 }
 
 /*

@@ -1,7 +1,7 @@
 #portfolio{
   background: rgb(24, 24, 24);
   color: white;
-  padding: 3% 0;
+  padding: 2% 0;
 }
 
 .flex-conteiner-portfolio {
@@ -12,17 +12,17 @@
   border-radius: 15px;
   margin: 4% auto;
   width: 30%;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 .piego-logo {
   width: 80%;
-  padding: 0 3% 5% 5%;
+  padding: 0 3% 0 5%;
 }
 
 .texto-piego {
   font-size: 20px;
-  padding: 0 5% 15% 5%;
+  padding: 10% 5% 15% 5%;
 }
 
 .pure-button {
