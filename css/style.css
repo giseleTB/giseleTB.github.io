@@ -1,12 +1,15 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 19px;
 	width: 100%;
 	height: 100%;
 	background: #fff;
 	margin: 0;
 	padding: 0;
 }
+
+/* Defines the style of the h2 headings and sets the style for the line that appears below 
+the link when the mouse is over it */
 
 h2 {
 	color: #008080;
@@ -34,6 +37,8 @@ h2:hover:after {
 	width: 100px;
 }
 
+/* Defines the font for h2, h3, and h4 headings */
+
 h3,
 h4,
 h5 {
@@ -41,7 +46,7 @@ h5 {
 }
 
 
-/* SCROLL TO TOP ARROW */
+/*/ SCROLL TO TOP ARROW /*/
 
 #return-to-top {
 	position: fixed;
@@ -57,9 +62,13 @@ h5 {
 	border-radius: 35px;
 	display: none;
 	-webkit-transition: all 0.3s linear;
+	/* Define a duração e a animação da transição no Safari e no Chrome */
 	-moz-transition: all 0.3s ease;
+	/* Define a duração e a animação da transição no Firefox */
 	-ms-transition: all 0.3s ease;
+	/* Define a duração e a animação da transição no Internet Explorer */
 	-o-transition: all 0.3s ease;
+	/* Define a duração e a animação da transição no Opera */
 	transition: all 0.3s ease;
 	z-index: 999;
 }
@@ -88,159 +97,66 @@ h5 {
 }
 
 
-/* END SCROLL TO TOP ARROW */
+/*/ END SCROLL TO TOP ARROW /*/
 
-
-/* START PRELOADER */
-
-#preloader {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #008080;
-	z-index: 99;
-	height: 100%;
-}
-
-#status {
-	width: 200px;
-	height: 200px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	background-image: url(http://marinamarques.pt/img/preloader.gif);
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: -100px 0 0 -100px;
-}
-
-
-/* END PRELOADER */
-
-
-/* start header */
-
-.navbar-fixed-top {
-	background-color: #008080;
-}
-
-.navbar-brand {
-	padding: 0px 15px;
-	height: 56px;
-	margin-left: 0;
-}
+/*/ NAVBAR /*/
 
 .navbar {
-	margin-bottom: 0px;
+	background-color: #008080;
 	border: none;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	border-radius: 0%;
 }
 
-.navbar-inverse .navbar-toggle:focus,
-.navbar-inverse .navbar-toggle:hover {
-	background-color: #40E0D0;
+.navbar .navbar-links {
+	display: flex;
+	align-items: center;
 }
 
-.navbar-inverse .navbar-toggle {
-	border: none;
-}
-
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-	border: none;
-}
-
-.navbar-toggle .icon-bar {
-	width: 35px;
-	height: 5px
-}
-
-#ResponsiveNav li a {
+.navbar .navbar-links a {
 	font-size: 16px;
 	color: #fff;
-	font-weight: 700;
-	display: inline-block;
-	position: relative;
 	text-decoration: none;
-	overflow: hidden;
-	-webkit-transition: all .40s ease-in-out;
 	transition: all .40s ease-in-out;
-	font-family: 'Roboto', sans-serif;
-	text-transform: lowercase;
+	margin: 12px;
+	position: relative;
 }
 
-#ResponsiveNav li a:after {
+.navbar .navbar-links a:hover {
+	color: #40E0D0;
+}
+
+.navbar .navbar-links a:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	width: 0;
-	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	height: 3px;
 	background: #40E0D0;
-	-webkit-transition: .35s;
 	transition: .35s;
 }
 
-#ResponsiveNav li a:hover {
-	color: #40E0D0;
+.navbar .navbar-links a:hover:after,
+.navbar .navbar-links a:focus:after,
+.navbar .navbar-links a:active:after {
+	width: 100%;
 }
 
-#ResponsiveNav ul li a:hover:after,
-#ResponsiveNav ul li a:focus:after,
-#ResponsiveNav ul li a:active:after {
-	width: 70%;
+@media only screen and (max-width: 1050px) {
+	.navbar {
+		visibility: hidden;
+	}
 }
 
-button.navbar-toggle.collapsed {
-	background-color: #008080;
-	border: none;
-}
+/*/ END NAVBAR /*/
 
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-	background-color: #40E0D0;
-	border: none;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff;
-}
-
-
-/*/ start hamburger menu desktop overwrite bootstrap /*/
-
-.navbar-header {
-	float: none;
-}
-
-.navbar-toggle {
-	display: block;
-}
-
-.navbar-collapse.collapse {
-	display: none!important;
-}
-
-.navbar-nav {
-	float: none!important;
-}
-
-.navbar-nav>li {
-	float: none;
-}
-
-.navbar-collapse.collapse.in {
-	display: block !important;
-}
-
-
-/*/ end hamburger menu desktop overwrite bootstrap /*/
-
-
-/*/ start intro /*/
+/*/ START INTRO /*/
 
 .intro {
 	display: table;
@@ -256,7 +172,7 @@ button.navbar-toggle.collapsed {
 .intro .intro-body {
 	display: table-cell;
 	vertical-align: middle;
-	padding: 15% 0;
+	padding: 16% 0;
 	background: rgba(0, 0, 0, 0.5);
 }
 
@@ -269,7 +185,7 @@ button.navbar-toggle.collapsed {
 }
 
 .intro .intro-body .intro-text {
-	font-size: 25px;
+	font-size: 19px;
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
 }
@@ -286,11 +202,13 @@ span.city {
 		height: 100%;
 		padding: 0;
 	}
+
 	.intro .intro-body .brand-heading {
 		font-size: 130px;
 	}
+
 	.intro .intro-body .intro-text {
-		font-size: 35px;
+		font-size: 30px;
 	}
 }
 
@@ -324,31 +242,37 @@ span.city {
 		opacity: 0;
 		-webkit-transform: scaleY(1) scaleX(1);
 	}
+
 	5% {
 		top: 8px;
 		opacity: 0.8;
 		-webkit-transform: scaleY(1.2) scaleX(1.2);
 	}
+
 	10% {
 		top: 8px;
 		opacity: 1;
 		-webkit-transform: scaleY(1.6) scaleX(1.6);
 	}
+
 	15% {
 		top: 8px;
 		opacity: 1;
 		-webkit-transform: scaleY(1.2) scaleX(1.2);
 	}
+
 	20% {
 		top: 8px;
 		opacity: 1;
 		-webkit-transform: scaleY(1.2) scaleX(1.2);
 	}
+
 	30% {
 		top: 15px;
 		opacity: 1;
 		-webkit-transform: scaleY(1.2) scaleX(1.2);
 	}
+
 	100% {
 		top: 30px;
 		opacity: 0;
@@ -360,10 +284,10 @@ span.city {
 /* End Scroll Down Indicator */
 
 
-/*/ end intro /*/
+/*/ END INTRO /*/
 
 
-/*/ start about /*/
+/*/ START ABOUT /*/
 
 #about-me {
 	margin-top: 20px;
@@ -380,16 +304,6 @@ span.city {
 	float: right;
 }
 
-.about-intro-text span {
-	color: #40E0D0;
-	font-weight: 700;
-}
-
-.about-intro-text .fa-beer {
-	color: #40E0D0;
-	font-size: 20px;
-}
-
 .button-group {
 	cursor: pointer;
 	display: -webkit-inline-box;
@@ -400,7 +314,7 @@ span.city {
 .text {
 	background: #008080;
 	color: #fff;
-	font-size: 18px;
+	font-size: 19px;
 	height: 50px;
 	padding: 0 25px;
 	line-height: 50px;
@@ -457,7 +371,7 @@ a .fa-arrow-circle-down {
 }
 
 .img-responsive {
-  height: 80rem;
+	height: 60rem;
 }
 
 .about-ct .textbox-about {
@@ -489,14 +403,14 @@ div.button-social {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	margin-top: 25px;
-	font-size: 18px;
+	font-size: 19px;
 	color: #fff;
 	margin: 5% 5%;
 }
 
 div.button-social a {
 	color: #fff;
-	font-size: 18px;
+	font-size: 19px;
 	margin: 15px;
 }
 
@@ -510,9 +424,9 @@ div.button-social a:hover {
 	outline: 0;
 }
 
-/*/ end about /*/
+/*/ END ABOUT /*/
 
-/*/ start work portfolio /*/
+/*/ START PORTFOLIO /*/
 
 #portfolio {
 	margin-top: 20px;
@@ -525,6 +439,12 @@ div.button-social a:hover {
 	text-align: center;
 }
 
+.center-portfolio {
+	display: flex;
+	justify-content:space-between;
+	padding: 0 3% 3% 3%;
+}
+
 .grid-portfolio {
 	margin-top: 20px;
 }
@@ -534,22 +454,19 @@ div.button-social a:hover {
 }
 
 .thumbnail {
-	max-width: 500px;
 	border: none;
-	position: relative;
-	background: none;
 	padding: 0;
 }
 
-.portfolio-details h3 {
+.projeto-texto h3 {
 	color: #008080;
 	font-weight: 700;
 	font-size: 25px;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.portfolio-details p {
-	font-size: 14px;
+.projeto-texto p {
+	font-size: 19px;
 }
 
 ul.portfolio-tags {
@@ -559,7 +476,7 @@ ul.portfolio-tags {
 
 li.portfolio-tag {
 	list-style-type: none;
-	font-size: 9px;
+	font-size: 13px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	color: #40E0D0;
@@ -568,61 +485,27 @@ li.portfolio-tag {
 	padding: 8px;
 }
 
-span.portfolio-link {
+.link-github {
 	font-size: 30px;
-	border: 2px solid #fff;
-	border-radius: 50px;
-	padding: 20px;
-	color: #fff;
-	margin: 20% auto;
+	color: black;
+	margin: 10px;
 }
 
-.portfolio-item-ct .textbox-portfolio {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	background: #40e0d0;
-	opacity: 0.9;
+.link-github:hover,
+.link-github:after,
+.link-github:visited footer a:focus {
+	color: #40E0D0;
 }
+ 
+/*/ END PORTFOLIO /*/
 
-.portfolio-item-ct:hover .textbox-portfolio {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
-.textbox-portfolio {
-	-webkit-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-}
-
-div.button-weblink {
-	-webkit-transition: all .35s;
-	transition: all .35s;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	color: #fff;
-	text-align: center;
-}
-
-.portfolio-tag:focus,
-.portfolio-tags:focus {
-	outline: 0;
-}
-
-
-/*/ end work portfolio /*/
-
-/*/ start contact /*/
+/*/ START CONTACT /*/
 
 footer {
 	text-align: center;
-	font-size: 18px;
+	font-size: 19px;
 	margin-top: 20px;
+	background: url(/img/footerImg.jpg);
 }
 
 #contact h2 {
@@ -639,7 +522,7 @@ footer p {
 .social,
 footer a {
 	font-size: 30px;
-	color: #24242a;
+	color: white;
 	margin: 10px;
 }
 
@@ -652,29 +535,108 @@ footer a:visited footer a:focus {
 #copyright {
 	margin-top: 35px;
 	font-size: 14px;
+	color: white;
+}
+
+/*FORM*/
+
+.contact-form {
+	padding: 8% 5%;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #00d8b2;
+	border-radius: 0;
+	color: white;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 1% 0;
+}
+
+.contact-form .form-group textarea {
+	resize: vertical;
 }
 
 
-/*/ end contact /*/
+.contact-form .form-group label {
+	color: white;
+	float: left;
+	font-weight: normal;
+}
 
 
-/*/ media queries /*/
+.grid {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+@media (min-width: 544px) {
+	.grid .grid-col-sm-12 {
+		grid-column: span 12;
+	}
+}
+
+@media (min-width: 768px) {
+	.grid .grid-col-md-6 {
+		grid-column: span 6;
+	}
+}
+
+/*btn contact*/
+.btn {
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 1rem 5rem;
+	margin: 1.5625rem 0 0;
+	border-radius: 2px;
+	text-align: center;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/*border*/
+.btn-outline-teal {
+	color: #00d8b2;
+	border: 2px solid #00d8b2;
+}
+
+/*hover*/
+.btn-outline-teal:hover {
+	background-color: #00d8b2;
+	color: #ffffff;
+}
+
+
+/*/ END CONTACT /*/
+
+
+/*/ MEDIA QUERIES /*/
 
 @media only screen and (max-width: 480px) {
 	.brand-heading {
 		font-size: 85px;
 		margin-top: 10%;
 	}
+
 	.col-exp {
 		margin-top: 15%;
 	}
+
 	.timeline .timeline-experience {
 		margin-left: 20px;
 		padding-left: 20px;
 	}
+
 	.timeline time {
 		width: 40px;
 	}
+
 	.services-item {
 		margin-bottom: 15%;
 	}
