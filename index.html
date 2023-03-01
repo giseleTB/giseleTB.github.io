@@ -8,57 +8,32 @@
   <link rel="shortcut icon" href="img/LOGO.svg" type="image/x-icon" />
 
   <title>Gisele</title>
+  <script src="https://kit.fontawesome.com/cab7178e4a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-  <!-- Please do not claim this website as your own. You don't have to give me credit but DON'T claim it's your code. When you use this as a base for your website please remove all tracking (Google Analytics, Heap).
--->
-
-
-  <!-- START PRELOADER -->
-  <div id="preloader" style="display: none;">
-    <div id="status" style="display: none;">&nbsp;</div>
-  </div>
-  <!-- END PRELOADER -->
   <!-- Return to Top -->
   <a href="javascript:" id="return-to-top"><span class="fa fa-arrow-up" aria-hidden="true"></span></a>
   <!-- navigation -->
-  <!-- start Fixed navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#about">
-          <img alt="Marina Marques" class="navbar-brand" src="http://marinamarques.pt/img/marina_marques_logo.png">
-        </a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ResponsiveNav">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right" id="ResponsiveNav">
-        <ul class="nav navbar-nav">
-          <li><a href="#about-me" class="page-scroll">ABOUT</a></li>
-          <li><a href="#portfolio" class="page-scroll">PORTFOLIO</a></li>
-          <li><a href="#services" class="page-scroll">SERVICES</a></li>
-          <li><a href="#contact" class="page-scroll">CONTACT</a></li>
-        </ul>
-      </div>
-      <!-- end collapse -->
+  <nav class="navbar">
+    <div class="navbar-links">
+      <a href="#intro">Início</a>
+      <a href="#about-me">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contact">Contato</a>
     </div>
-    <!-- end container fluid -->
   </nav>
+
   <!-- end navigation -->
   <!-- intro header -->
-  <header class="intro">
+  <header class="intro" id="intro">
     <div class="intro-body">
       <div class="container">
         <div class="row">
@@ -71,7 +46,8 @@
             </div>
             <!-- end typer hello -->
             <p class="intro-text">meu nome é Gisele Tonello.
-              <br> Eu sou <span class="fa fa-code" aria-hidden="true"></span> <span class="intro-text-hgl">desenvolvedora
+              <br> Eu sou <span class="fa fa-code" aria-hidden="true"></span> <span
+                class="intro-text-hgl">desenvolvedora
                 front-end</span> <span class="fa fa-code" aria-hidden="true">,</span>
               <br>apaixonada por experiência de usuário e design de telas.
             </p>
@@ -104,14 +80,14 @@
         <div class="col-lg-6 about-intro">
           <div class="about-inner">
             <div class="about-ct">
-              <img src="img/me.jpg" alt="Marina Marques" class="img-responsive">
+              <img src="img/me.jpg" alt="Gisele Tonello" class="img-responsive">
               <div class="textbox-about hidden-xs">
                 <div class="btn button-social">
-                  <a href="https://codepen.io/shvvffle/" target="_blank" alt="CodePen profile"><span
+                  <a href="https://codepen.io/giseleTB" target="_blank" alt="CodePen profile"><span
                       class="fa fa-codepen" aria-hidden="true"></span></a>
-                  <a href="https://pt.linkedin.com/in/marinamarques9" alt="LinkedIn profile" target="_blank"><span
-                      class="fa fa-linkedin" aria-hidden="true"></span></a>
-                  <a href="https://github.com/shvvffle" target="_blank" alt="GitHub profile"><span class="fa fa-github"
+                  <a href="https://www.linkedin.com/in/gisele-tonello-bringhenti/" alt="LinkedIn profile"
+                    target="_blank"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                  <a href="https://github.com/giseleTB" target="_blank" alt="GitHub profile"><span class="fa fa-github"
                       aria-hidden="true"></span></a>
                 </div>
               </div>
@@ -119,19 +95,18 @@
           </div>
         </div>
         <div class="col-lg-6 about-intro-text">
-          <p>Eu sou <span>desenvolvedora front-end</span> apaixonada por experiência de usuário e design de telas.<br> 
-            Minha primeira experiência com programação foi através do técnico em informática integrado ao ensino médio. 
+          <p>Eu sou <span>desenvolvedora front-end</span> apaixonada por experiência de usuário e design de telas.<br>
+            Minha primeira experiência com programação foi através do técnico em informática integrado ao ensino médio.
             I remember struggling with finding the
             way to change the background-color and
             have flashy text. I used to spend hours trying to customize it and couldn't even seem to see the time get
             by. The excitement of having the power to structure pages on my own was amazing. It's just like lego. You
             start piece by piece, nobody understands
-            what you're building and tada... you have a castle.<br> Here's to building castles with code! <span
-              class="fa fa-beer" aria-hidden="true"></span></p>
+            what you're building and tada... you have a castle.</p>
           <div class="button-group">
             <div class="text">Download CV</div>
-            <div class="icon-cv"><a href="http://marinamarques.pt/assets/MarinaMarques_CV.pdf" alt="Marina Marques CV"
-                target="_blank"><span class="fa fa-arrow-circle-down" aria-hidden="true"></span></a></div>
+            <div class="icon-cv"><a href="/giseleTonelloBringhenti.pdf" alt="Gisele Tonello CV" target="_blank"><span
+                  class="fa fa-arrow-circle-down" aria-hidden="true"></span></a></div>
           </div>
         </div>
       </div>
@@ -144,25 +119,105 @@
   <section id="portfolio">
     <div class="container-fluid portfolio-ct">
       <h2>PORTFÓLIO</h2>
-      
+      <div class="row center-portfolio">
+        <!-- start second portfolio item -->
+        <div class="col-sm-6 col-md-4 grid-portfolio ">
+          <div class="portfolio-item-ct ">
+            <div class="thumbnail">
+              <img src="/img/g.png" alt="Portfolio - Piego landing page" class="img-responsive">
+            </div>
+            <div class="portfolio-details">
+              <h3>LANDING PAGE</h3>
+              <p>Desenvolvimento de uma Landing Page responsiva
+                <br> para a empresa.
+              </p>
+              <a href="http://www.piegotech.com/" target="_blank" alt="Link piego website"><span class="fa-solid fa-globe link-github"
+                aria-hidden="true"></span></a>
+              <ul class="portfolio-tags">
+                <li class="portfolio-tag">HTML5 / CSS3</li>
+                <li class="portfolio-tag">BOOTSTRAP</li>
+                <li class="portfolio-tag">JAVASCRIPT</li>
+                <li class="portfolio-tag">SEO</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end second portfolio item -->
+        <!-- start third portfolio item -->
+        <div class="col-sm-6 col-md-4 grid-portfolio">
+          <div class="portfolio-item-ct">
+            <div class="thumbnail">
+              <img src="http://marinamarques.pt/img/work-personalWebsite.png" alt="Portfolio - PERSONAL WEBSITE"
+                class="img-responsive">
+            </div>
+            <div class="caption portfolio-details">
+              <h3>PERSONAL WEBSITE</h3>
+              <p>Website responsivo usando
+                <br> Bootstrap (este website).
+              </p>
+              <a href="https://github.com/giseleTB" target="_blank" alt="GitHub profile"><span class="fa fa-github link-github"
+                aria-hidden="true"></span></a>
+              <ul class="portfolio-tags">
+                <li class="portfolio-tag">HTML5 / CSS3</li>
+                <li class="portfolio-tag">BOOTSTRAP</li>
+                <li class="portfolio-tag">JAVASCRIPT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end third portfolio item -->
+      </div>
     </div>
     <!-- end container portfolio -->
   </section>
   <!-- end work portfolio -->
-  
+
   <!-- start footer -->
   <footer id="contact">
     <div class="container">
       <div class="row">
         <h2>CONTATO</h2>
-        <p>Você pode entrar em contato comigo em: giseletbrin@gmail.com</p>
+        <form class="contact-form" action="#" method="post">
+
+          <div class="grid">
+            <div class="grid-col-sm-12 grid-col-md-6">
+              <div class="form-group">
+                <label for="firstName">Nome:</label>
+                <input type="text" name="firstName" required>
+
+              </div>
+            </div>
+            <div class="grid-col-sm-12 grid-col-md-6">
+              <div class="form-group">
+                <label for="lasttName">Sobrenome:</label>
+                <input type="text" name="lastName" required>
+
+              </div>
+            </div>
+            <div class="grid-col-sm-12">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" required>
+
+              </div>
+            </div>
+            <div class="grid-col-sm-12">
+              <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea name="message" required></textarea>
+
+              </div>
+            </div>
+          </div>
+          <input class="btn btn-outline-teal" type="submit" value="Enviar">
+        </form>
         <br>
         <div class="social">
-          <a href="https://codepen.io/shvvffle/" target="_blank" alt="CodePen profile"><span class="fa fa-codepen"
+          <a href="https://codepen.io/giseleTB" target="_blank" alt="CodePen profile"><span class="fa fa-codepen"
               aria-hidden="true"></span></a>
-          <a href="https://pt.linkedin.com/in/marinamarques9" target="_blank" alt="LinkedIn profile"><span
+          <a href="https://www.linkedin.com/in/gisele-tonello-bringhenti/" target="_blank" alt="LinkedIn profile"><span
               class="fa fa-linkedin" aria-hidden="true"></span></a>
-          <a href="https://github.com/shvvffle" target="_blank" alt="GitHub profile"><span class="fa fa-github"
+          <a href="https://github.com/giseleTB" target="_blank" alt="GitHub profile"><span class="fa fa-github"
               aria-hidden="true"></span></a>
         </div>
         <p id="copyright">© Gisele Tonello 2023</p>
@@ -173,7 +228,6 @@
   </footer>
   <!-- end footer -->
 
-
   <script
     src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -182,6 +236,7 @@
   <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-b9c90d0c-767b-95c3-2187-741cc559cf57"
     crossorigin=""></script>
   <script src="main.js"></script>
+  <script src="menu.js"></script>
 
 
   <style type="text/css">
