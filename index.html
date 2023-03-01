@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="img/LOGO.svg" type="image/x-icon" />
 
   <title>Gisele</title>
+
   <script src="https://kit.fontawesome.com/cab7178e4a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,6 +16,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="email.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('1V0WQl-vvSG-kQQkF')
+  </script>
 
 </head>
 
@@ -147,8 +155,7 @@
         <div class="col-sm-6 col-md-4 grid-portfolio">
           <div class="portfolio-item-ct">
             <div class="thumbnail">
-              <img src="/img/h.png" alt="Portfolio - PERSONAL WEBSITE"
-                class="img-responsive">
+              <img src="/img/h.png" alt="Portfolio - PERSONAL WEBSITE" class="img-responsive">
             </div>
             <div class="caption portfolio-details">
               <h3>PERSONAL WEBSITE</h3>
@@ -209,7 +216,7 @@
               </div>
             </div>
           </div>
-          <input class="btn btn-outline-teal" type="submit" value="Enviar">
+          <input class="btn btn-outline-teal" type="submit" value="Enviar" onclick="SendEmail()">
         </form>
         <br>
         <div class="social">
