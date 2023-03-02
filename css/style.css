@@ -100,11 +100,11 @@ h5 {
 	background-color: #008080;
 	border: none;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	border-radius: 0%;
+	border-radius: 0;
 }
 
 .navbar .navbar-links {
@@ -117,7 +117,7 @@ h5 {
 	color: #fff;
 	text-decoration: none;
 	transition: all .40s ease-in-out;
-	margin: 12px;
+	margin: 1px 15px;
 	position: relative;
 }
 
@@ -186,6 +186,21 @@ h5 {
 }
 
 @media (min-width: 768px) {
+	.intro {
+		height: 100%;
+		padding: 0;
+	}
+
+	.intro .intro-body .brand-heading {
+		font-size: 98px;
+	}
+
+	.intro .intro-body .intro-text {
+		font-size: 23px;
+	}
+}
+
+@media (min-width: 1600px) {
 	.intro {
 		height: 100%;
 		padding: 0;
@@ -281,6 +296,10 @@ h5 {
 	margin-top: 20px;
 }
 
+#about-me .container {
+	width: 60%;
+}
+
 #about-me h2 {
 	font-weight: 700;
 	margin-top: 22px;
@@ -352,14 +371,9 @@ a .fa-arrow-circle-down {
 	overflow: hidden;
 }
 
-.about-inner>img {
-	display: block;
-	min-width: 100%;
-	height: auto;
-}
 
 .img-responsive {
-	height: 60rem;
+	width: 100%;
 }
 
 .about-ct .textbox-about {
@@ -390,7 +404,6 @@ div.button-social {
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-	margin-top: 25px;
 	font-size: 19px;
 	color: #fff;
 	margin: 5% 5%;
@@ -412,6 +425,23 @@ div.button-social a:hover {
 	outline: 0;
 }
 
+@media only screen and (max-width: 475px) {
+	#about-me .container {
+		width: 90%;
+		text-align: justify;
+	}
+
+	.about-ct {
+		width: 50%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.about-intro-text {
+		padding-top: 2%;
+	}
+}
+
 /*/ END ABOUT /*/
 
 /*/ START PORTFOLIO /*/
@@ -429,7 +459,7 @@ div.button-social a:hover {
 
 .center-portfolio {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 	padding: 0 3% 3% 3%;
 }
 
@@ -486,11 +516,11 @@ li.portfolio-tag {
 }
 
 @media only screen and (max-width: 480px) {
-	.center-portfolio{
+	.center-portfolio {
 		display: block;
 	}
 }
- 
+
 /*/ END PORTFOLIO /*/
 
 /*/ START CONTACT /*/
@@ -498,19 +528,14 @@ li.portfolio-tag {
 footer {
 	text-align: center;
 	font-size: 19px;
-	margin-top: 20px;
+	margin-top: 5%;
 	background: url(/img/footerImg.jpg);
 }
 
 #contact h2 {
 	font-weight: 700;
-	margin-top: 22px;
-	padding-bottom: 10px;
+	margin-top: 2%;
 	text-align: center;
-}
-
-footer p {
-	margin-top: 50px;
 }
 
 .social,
@@ -581,7 +606,7 @@ footer a:visited footer a:focus {
 }
 
 /*btn contact*/
-.btn {
+.btn-contact {
 	font-size: 2rem;
 	font-weight: 700;
 	padding: 1rem 5rem;
@@ -604,6 +629,38 @@ footer a:visited footer a:focus {
 	color: #ffffff;
 }
 
+@media (max-width: 1600px) {
+	footer {
+		font-size: 16px;;
+	}
+
+	.contact-form {
+		padding: 3% 8% 1% 8%;
+	}
+
+	.contact-form .form-group input,
+	.contact-form .form-group textarea {
+		padding: 0;
+	}
+
+	.btn-contact {
+		font-size: 1.7rem;
+		margin: 0.5rem 0 0;
+	}
+
+	.social,
+	footer a {
+		font-size: 25px;
+		color: white;
+		margin: 7px;
+	}
+
+	#copyright {
+		margin-top: 20px;
+	}
+
+}
+
 
 /*/ END CONTACT /*/
 
@@ -614,22 +671,5 @@ footer a:visited footer a:focus {
 	.brand-heading {
 		font-size: 85px;
 		margin-top: 10%;
-	}
-
-	.col-exp {
-		margin-top: 15%;
-	}
-
-	.timeline .timeline-experience {
-		margin-left: 20px;
-		padding-left: 20px;
-	}
-
-	.timeline time {
-		width: 40px;
-	}
-
-	.services-item {
-		margin-bottom: 15%;
 	}
 }
