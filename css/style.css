@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 19px;
@@ -631,7 +635,8 @@ footer a:visited footer a:focus {
 
 @media (max-width: 1600px) {
 	footer {
-		font-size: 16px;;
+		font-size: 16px;
+		;
 	}
 
 	.contact-form {
