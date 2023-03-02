@@ -8,9 +8,6 @@ body {
 	padding: 0;
 }
 
-/* Defines the style of the h2 headings and sets the style for the line that appears below 
-the link when the mouse is over it */
-
 h2 {
 	color: #008080;
 	font-weight: 700;
@@ -36,8 +33,6 @@ h2:after {
 h2:hover:after {
 	width: 100px;
 }
-
-/* Defines the font for h2, h3, and h4 headings */
 
 h3,
 h4,
@@ -188,13 +183,6 @@ h5 {
 	font-size: 19px;
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
-}
-
-span.city {
-	background-color: #40E0D0;
-	color: #fff;
-	border-radius: 4px;
-	width: 15px;
 }
 
 @media (min-width: 768px) {
@@ -485,15 +473,15 @@ li.portfolio-tag {
 	padding: 8px;
 }
 
-.link-github {
+.icon-portfolio {
 	font-size: 30px;
 	color: black;
 	margin: 10px;
 }
 
-.link-github:hover,
-.link-github:after,
-.link-github:visited footer a:focus {
+.icon-portfolio:hover,
+.icon-portfolio:after,
+.icon-portfolio:visited footer a:focus {
 	color: #40E0D0;
 }
  
@@ -600,13 +588,11 @@ footer a:visited footer a:focus {
 	text-decoration: none;
 }
 
-/*border*/
 .btn-outline-teal {
 	color: #00d8b2;
 	border: 2px solid #00d8b2;
 }
 
-/*hover*/
 .btn-outline-teal:hover {
 	background-color: #00d8b2;
 	color: #ffffff;
