@@ -484,6 +484,12 @@ li.portfolio-tag {
 .icon-portfolio:visited footer a:focus {
 	color: #40E0D0;
 }
+
+@media only screen and (max-width: 480px) {
+	.center-portfolio{
+		display: block;
+	}
+}
  
 /*/ END PORTFOLIO /*/
 
