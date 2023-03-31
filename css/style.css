@@ -375,11 +375,6 @@ a .fa-arrow-circle-down {
 	overflow: hidden;
 }
 
-
-.img-responsive {
-	width: 90%;
-}
-
 .about-ct .textbox-about {
 	width: 100%;
 	height: 100%;
@@ -460,11 +455,19 @@ div.button-social a:hover {
 	padding-bottom: 10px;
 	text-align: center;
 }
-
+/*
 .center-portfolio {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 3% 3% 3%;
+}*/
+
+.center-portfolio {
+	display: grid;
+	gap: 5%;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-between;
+	margin: 5%;
 }
 
 .portfolio-details {
@@ -474,6 +477,7 @@ div.button-social a:hover {
 .thumbnail {
 	border: none;
 	padding: 0;
+	
 }
 
 .projeto-texto h3 {
@@ -490,6 +494,8 @@ div.button-social a:hover {
 ul.portfolio-tags {
 	padding: 10px 0 10px 0;
 	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 li.portfolio-tag {
@@ -501,6 +507,7 @@ li.portfolio-tag {
 	display: inline;
 	border: 2px solid #40E0D0;
 	padding: 8px;
+	margin: 1px;
 }
 
 .icon-portfolio {
