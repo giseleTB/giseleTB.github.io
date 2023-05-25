@@ -11,12 +11,12 @@ body {
 	padding: 0;
 	scroll-behavior: smooth;
 	line-height: 1;
-    mix-blend-mode: difference;
+    
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-      forced-color-adjust: none;
+      forced-color-adjust:auto;
       background-color: #fff; /* cor de fundo no modo noturno */
       color: rgba(0,16,36,.9); /* cor do texto no modo noturno */
     }
