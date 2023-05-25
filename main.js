@@ -1,34 +1,3 @@
-// Scroll to Top
-jQuery.noConflict();
-(function($) {
-	$(window).scroll(function() {
-		if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-			$('#return-to-top').fadeIn(200); // Fade in the arrow
-		} else {
-			$('#return-to-top').fadeOut(200); // Else fade out the arrow
-		}
-	});
-	$('#return-to-top').click(function() { // When arrow is clicked
-		$('body,html').animate({
-			scrollTop: 0 // Scroll to top of body
-		}, 500);
-	});
-})(jQuery);
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-jQuery.noConflict();
-(function($) {
-	$(function() {
-		$('a.page-scroll').bind('click', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1500, 'easeInOutExpo');
-			event.preventDefault();
-		});
-	});
-})(jQuery);
-
 // typer for hello
 window.onload = function() {
 	var elements = document.getElementsByClassName('txt-rotate');
@@ -42,7 +11,7 @@ window.onload = function() {
 	// INJECT CSS
 	var css = document.createElement("style");
 	css.type = "text/css";
-	css.innerHTML = ".txt-rotate > .wrap { border-right: 10px solid #40E0D0 }";
+	css.innerHTML = ".txt-rotate > .wrap { border-right: 2px solid rgba(0,16,36,.9) }";
 	document.body.appendChild(css);
 };
 
@@ -88,11 +57,3 @@ TxtRotate.prototype.tick = function() {
 		that.tick();
 	}, delta);
 };
-
-// update footer copyright year
-
-var today = new Date();
-var year = today.getFullYear();
-
-var copyright = document.getElementById("copyright");
-copyright.innerHTML = '© Gisele Tonello '+ year;
