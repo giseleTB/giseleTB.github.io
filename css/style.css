@@ -11,6 +11,7 @@ body {
 	padding: 0;
 	scroll-behavior: smooth;
 	line-height: 1;
+    mix-blend-mode: difference;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -130,9 +131,6 @@ div .image-intro {
     div .image-intro {
         max-width: 300px;
     }
-    img.project-logo {
-        max-width: 1rem;
-    }
 }
 
 @media(max-width: 40rem) {
@@ -156,6 +154,10 @@ div .image-intro {
 
     .hide-s {
         display: none
+    }
+
+    img.project-logo {
+        max-width: 1rem;
     }
 }
 
