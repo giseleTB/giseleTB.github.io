@@ -522,3 +522,7 @@ ul.contact li a.social:hover img {
     box-sizing: border-box;
     backdrop-filter: blur(4px)
 }
+
+body {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* Substitua a cor pelo valor desejado */
+  }
